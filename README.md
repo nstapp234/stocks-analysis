@@ -6,6 +6,7 @@ The purpose of this analysis is to be able to calculate how well certain stocks 
 ## Results
 In 2017, all stocks had a positive return except TERP. In 2018, only ENPH and RUN had a positive return. All other stocks had a negative return.
 
+### Declaring Stocks
 Both before and after refactoring, the stocks are declared as follows:
 ```
     tickers(0) = "AY"
@@ -21,6 +22,7 @@ Both before and after refactoring, the stocks are declared as follows:
     tickers(10) = "TERP"
     tickers(11) = "VSLR"
 ```
+### Loops
 
 Before refactoring, the loops look like this:
 ```
@@ -54,6 +56,14 @@ After refactoring, the loop looks like this:
 ```
 
 After refactoring, there is only one loop instead of a loop inside of another loop. This results in the code running faster.
+
+### Results with Time
+
+Results for 2017 before refactoring:
+![Original Results 2017](Resources/Green_Stocks_2017.png)
+
+Results for 2018 before refactoring:
+![Original Results 2018](Resources/Green_Stocks_2018.png)
 
 Results for 2017 after refactoring:
 ![Refactored Results 2017](Resources/VBA_Challenge_2017.png)
